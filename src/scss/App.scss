@@ -1,4 +1,6 @@
 @use './Variables' as *;
+@use '../components/Other/StepsDisplay/StepsDisplay';
+@use '../components/Layouts/PersonalDataLayout/PersonalDataLayout';
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -9,7 +11,23 @@
 }
 
 #root, body{
-    background-color: $bg-color;
+    align-items: center;
+    background-color: $light-blue;
+    display: flex;
+    justify-content: center;
     height: 100vh;
+    overflow-x: hidden;
     width: 100vw;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+@media (orientation: portrait) {
+    main{
+        flex-direction: column;
+    }
 }
