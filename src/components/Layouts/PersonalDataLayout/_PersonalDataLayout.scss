@@ -1,13 +1,8 @@
 @use '../../../scss/Variables' as *;
 
 .personal-data{
-    color: $dark-blue;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
+    @extend %section-default;
     min-height: 800px;
-    padding: 72px;
-    width: 100%;
 
     &__title{
         @extend %center;
@@ -72,13 +67,8 @@
     }
 
     &__button--next{
-        background-color: $very-light-blue;
-        border: 2px solid $dark-blue;
-        color: $dark-blue;
-        cursor: pointer;
-        font-size: 24px;
+        @extend %button;
         margin-left: auto;
-        padding: 12px 24px;
         width: min-content;
 
         &:hover{

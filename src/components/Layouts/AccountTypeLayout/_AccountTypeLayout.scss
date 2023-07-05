@@ -1,0 +1,172 @@
+@use '../../../scss/Variables' as *;
+
+@mixin label($bg-color){
+    align-items: center;
+    border: 2px solid $dark-blue;
+    background-color: $bg-color;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 424px;
+    padding: 16px;
+    width: 284px;
+}
+
+.account-type{
+    @extend %section-default;
+
+    &__title{
+        @extend %center;
+        font-size: 48px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__label{
+        @include label($very-light-blue);
+
+        &--checked{
+            @include label($orange);
+        }
+    }
+
+    &__input{
+        appearance: none;
+
+        &--title{
+            font-size: 24px;
+        }
+
+        &--price{
+            font-size: 48px;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link{
+        @extend %button;
+        text-decoration: none;
+
+        &:hover{
+            background-color: $orange;
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .account-type{
+
+        &__label{
+            height: 320px;
+            width: 216px;
+
+            &--checked{
+                height: 320px;
+                width: 216px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .account-type{
+
+        &__label{
+            height: 240px;
+            width: 136px;
+
+            &--checked{
+                height: 240px;
+                width: 136px;
+            }
+        }
+
+        &__input{
+
+            &--title{
+                font-size: 16px;
+            }
+
+            &--price{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .account-type{
+
+        &__label{
+            height: 120px;
+            width: 76px;
+
+            &--checked{
+                height: 120px;
+                width: 76px;
+            }
+        }
+
+        &__input{
+            
+            &--title{
+                font-size: 12px;
+            }
+
+            &--price{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .account-type{
+
+        &__title{
+            font-size: 24px;
+        }
+    }
+}
+
+@media (orientation: portrait){
+    .account-type{
+        padding: 36px;
+
+        &__form{
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &__label{
+            height: 308px;
+            width: 192px;
+
+            &--checked{
+                height: 308px;
+                width: 192px;
+            }
+        }
+
+        &__input{
+
+            &--title{
+                font-size: 24px;
+            }
+    
+            &--price{
+                font-size: 48px;
+            }
+        }
+    }
+}

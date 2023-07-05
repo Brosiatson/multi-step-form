@@ -46,8 +46,7 @@
 @media (orientation: portrait) {
     .steps{
         flex-direction: row;
-        height: 16%;
-        min-height: 0;
+        min-height: 72px;
         width: 100%;
 
         &__circle{
