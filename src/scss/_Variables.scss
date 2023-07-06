@@ -26,4 +26,9 @@ $red: #ff4646;
     cursor: pointer;
     font-size: 20px;
     padding: 12px 24px;
+
+    &:focus-visible{
+        border: 2px solid $orange;
+        outline: none;
+    }
 }

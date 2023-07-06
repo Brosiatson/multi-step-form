@@ -1,0 +1,143 @@
+@use '../../../scss/Variables' as *;
+
+.addons{
+    @extend %section-default;
+
+    &__title{
+        @extend %center;
+        font-size: 48px;
+    }
+
+    &__form{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__label{
+        align-items: center;
+        background-color: $very-light-blue;
+        border: 2px solid $dark-blue;
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        max-width: 960px;
+        padding: 32px;
+        width: 100%;
+    }
+
+    &__input{
+        appearance: none;
+        border: 2px solid $dark-blue;
+        cursor: pointer;
+        height: 64px;
+        width: 64px;
+
+        &--title{
+            font-size: 28px;
+        }
+
+        &:checked{
+    
+            &::after{
+                @extend %center;
+                background-color: $dark-blue;
+                content: "\2713";
+                color: $very-light-blue;
+                font-size: 48px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &:focus-visible{
+            border: 2px solid $orange;
+            outline: none;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link{
+        @extend %button;
+        text-decoration: none;
+
+        &:hover{
+            background-color: $orange;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .addons{
+        
+        &__label{
+            height: 120px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .addons{
+        
+        &__label{
+            height: 80px;
+            padding: 16px;
+        }
+
+        &__input{
+            height: 40px;
+            width: 40px;
+            
+            &--title{
+                font-size: 20px;
+            }
+
+            &:checked{
+
+                &::after{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .addons{
+        
+        &__label{
+            height: 68px;
+            padding: 8px;
+        }
+
+        &__input{
+            height: 28px;
+            width: 28px;
+            
+            &--title{
+                font-size: 16px;
+            }
+
+            &:checked{
+
+                &::after{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .addons{
+        padding: 36px;
+    }
+}
+
