@@ -1,7 +1,6 @@
 import { AccountTypeType } from "./AccountTypeType"
 import { AddonsType } from "./AddonsType"
 import { PersonalDataType } from "./PersonalDataType"
-import { SummaryType } from "./SummaryType"
 
 export interface ContextType {
     personalData: {
@@ -15,9 +14,5 @@ export interface ContextType {
     addons: {
         addons: AddonsType
         setAddons: React.Dispatch<React.SetStateAction<AddonsType>>
-    }
-    summary: {
-        summary: SummaryType
-        setSummary: React.Dispatch<React.SetStateAction<SummaryType>>
     }
 }

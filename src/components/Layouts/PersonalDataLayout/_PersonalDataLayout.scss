@@ -70,15 +70,6 @@
         @extend %button;
         margin-left: auto;
         width: min-content;
-
-        &:hover{
-            background-color: $orange;
-        }
-
-        &:focus-visible{
-            outline: none;
-            border-color: $orange;
-        }
     }
 }
 

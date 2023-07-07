@@ -1,0 +1,100 @@
+@use '../../../scss/Variables' as *;
+
+.summary{
+    @extend %section-default;
+    align-items: center;
+
+    &__title{
+        @extend %center;
+        font-size: 48px;
+    }
+
+    &__list{
+        background-color: $very-light-blue;
+        border: 2px solid $dark-blue;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 36px;
+        max-width: 720px;
+
+        &--title{
+            font-size: 36px;
+        }
+
+        &--sublist{
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            gap: 12px;
+            list-style-type: none;
+        }
+
+        &--price{
+            font-size: 48px;
+            margin-top: 32px;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__link{
+        @extend %button;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .summary{
+
+        &__list{
+
+            &--title{
+                font-size: 24px;
+            }
+
+            &--sublist{
+                font-size: 20px;
+            }
+
+            &--price{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .summary{
+
+        &__list{
+            gap: 24px;
+
+            &--title{
+                font-size: 16px;
+            }
+
+            &--sublist{
+                font-size: 12px;
+            }
+
+            &--price{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .summary{
+        padding: 36px;
+
+        &__list{
+            padding: 16px;
+        }
+    }
+}

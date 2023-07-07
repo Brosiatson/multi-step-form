@@ -31,4 +31,8 @@ $red: #ff4646;
         border: 2px solid $orange;
         outline: none;
     }
+
+    &:hover{
+        background-color: $orange;
+    }
 }
