@@ -1,0 +1,43 @@
+@use '../../../scss/Variables' as *;
+
+.finish{
+    @extend %center;
+    color: $dark-blue;
+    flex-direction: column;
+    gap: 72px;
+    margin-block: auto;
+    padding: 72px;
+    width: 100%;
+
+    &__title{
+        font-size: 96px;
+        text-align: center;
+    }
+
+    &__text{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .finish{
+        padding: 32px;
+
+        &__title{
+            font-size: 64px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .finish{
+
+        &__title{
+            font-size: 36px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+    }
+}

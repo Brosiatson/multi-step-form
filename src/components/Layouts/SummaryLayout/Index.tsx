@@ -34,7 +34,7 @@ export const SummaryLayout: React.FC = () => {
                 </ul>
                 <nav className="summary__nav">
                     <Link className="summary__link" to="/addons">Prev</Link>
-                    <Link className="summary__link" to="">Finish</Link>
+                    <Link className="summary__link" to="/finish-screen">Confirm</Link>
                 </nav>
             </section>
         </main>

@@ -3,6 +3,7 @@ import { PersonalDataLayout } from "../components/Layouts/PersonalDataLayout/Ind
 import { AccountTypeLayout } from "../components/Layouts/AccountTypeLayout/Index";
 import { AddonsLayout } from "../components/Layouts/AddonsLayout/Index";
 import { SummaryLayout } from "../components/Layouts/SummaryLayout/Index";
+import { FinishScreenLayout } from "../components/Layouts/FinishScreenLayout/Index";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -11,6 +12,7 @@ export const router = createBrowserRouter(
             <Route path="/acc-type" element={<AccountTypeLayout />}/>
             <Route path="/addons" element={<AddonsLayout />}/>
             <Route path="/summary" element={<SummaryLayout />}/>
+            <Route path="/finish-screen" element={<FinishScreenLayout />}/>
         </>
     )
 ) 
