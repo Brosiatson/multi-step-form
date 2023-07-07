@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/multi-step-form/static/css/main.39e4820d.css",
-    "main.js": "/multi-step-form/static/js/main.e4a196f1.js",
+    "main.js": "/multi-step-form/static/js/main.dd21600b.js",
     "index.html": "/multi-step-form/index.html",
     "main.39e4820d.css.map": "/multi-step-form/static/css/main.39e4820d.css.map",
-    "main.e4a196f1.js.map": "/multi-step-form/static/js/main.e4a196f1.js.map"
+    "main.dd21600b.js.map": "/multi-step-form/static/js/main.dd21600b.js.map"
   },
   "entrypoints": [
     "static/css/main.39e4820d.css",
-    "static/js/main.e4a196f1.js"
+    "static/js/main.dd21600b.js"
   ]
 }
